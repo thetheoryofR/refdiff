@@ -1,6 +1,6 @@
 # refdiff: find PCB defects by comparing to a reference
 
-![ci](https://github.com/OWNER/refdiff/actions/workflows/ci.yml/badge.svg)
+![ci](https://github.com/thetheoryofR/refdiff/actions/workflows/ci.yml/badge.svg)
 
 Automated optical inspection usually has something a generic object detector does not: a picture of what
 the part *should* look like. That is a golden image (die-to-die) or the design database (die-to-database).
