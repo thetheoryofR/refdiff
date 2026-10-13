@@ -1,0 +1,9 @@
+{
+ "_note": "Floors/ceilings for scripts/gate.py. Measured values sit comfortably inside these; tighten when results improve.",
+ "reg_median_px": {"max": 0.25},
+ "reg_p95_px": {"max": 1.0},
+ "reg_max_confident_px": {"max": 5.0},
+ "reg_flagged_frac": {"max": 0.03},
+ "det_mAP": {"min": 0.965},
+ "det_f1": {"min": 0.96}
+}

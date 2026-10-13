@@ -1,0 +1,47 @@
+{
+ "n_layouts": 200,
+ "seeds": [
+  1000,
+  1199
+ ],
+ "protocol": {
+  "rot_deg": 2.0,
+  "shift_px": 15.0,
+  "etch_bias_px": [
+   -1,
+   0,
+   1
+  ],
+  "psf_sigma_px": [
+   1.0,
+   2.0
+  ],
+  "defects_per_die": 4
+ },
+ "registration_none": {
+  "median_px": 13.655981814817588,
+  "p95_px": 19.647959425093145,
+  "max_px": 21.3329296923937
+ },
+ "registration_fm+ecc": {
+  "median_px": 0.07139766883651957,
+  "p95_px": 0.17015979147238985,
+  "max_px": 0.40766519233435267
+ },
+ "registration_guarded": {
+  "median_px": 0.07132558975676451,
+  "p95_px": 0.17014372774970937,
+  "max_px": 0.40750429828502066
+ },
+ "flagged_for_review": 0,
+ "defects_registered": {
+  "recall": 0.9225,
+  "precision": 0.8611435239206534,
+  "candidates_per_die": 4.285
+ },
+ "defects_unregistered": {
+  "recall": 0.195,
+  "precision": 0.007438844118067808,
+  "candidates_per_die": 104.855
+ }
+}

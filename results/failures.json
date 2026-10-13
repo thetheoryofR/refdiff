@@ -1,0 +1,298 @@
+{
+ "burned_in_label_images": [
+  "44000020"
+ ],
+ "refdiff": {
+  "n_gt": 3140,
+  "n_kept": 3110,
+  "missed": {
+   "total": 72,
+   "by_cause": {
+    "low score": 32,
+    "diff empty": 15,
+    "diff box off": 14,
+    "box off": 6,
+    "wrong class": 5
+   },
+   "by_class": {
+    "mousebite": 21,
+    "short": 20,
+    "spur": 13,
+    "open": 11,
+    "copper": 4,
+    "pin-hole": 3
+   }
+  },
+  "false alarm": {
+   "total": 42,
+   "by_cause": {
+    "duplicate": 15,
+    "fragment": 9,
+    "burned-in label": 7,
+    "wrong class": 6,
+    "no defect": 4,
+    "box off": 1
+   },
+   "by_class": {
+    "open": 11,
+    "short": 9,
+    "pin-hole": 7,
+    "mousebite": 6,
+    "copper": 6,
+    "spur": 3
+   }
+  },
+  "confusions": {
+   "spur -> short": 3,
+   "open -> mousebite": 1,
+   "short -> copper": 1
+  },
+  "by_board": {
+   "00041": {
+    "images": 21,
+    "train_images": 200,
+    "missed": 0,
+    "false alarm": 0
+   },
+   "12000": {
+    "images": 14,
+    "train_images": 0,
+    "missed": 0,
+    "false alarm": 0
+   },
+   "12100": {
+    "images": 146,
+    "train_images": 0,
+    "missed": 5,
+    "false alarm": 2
+   },
+   "12300": {
+    "images": 98,
+    "train_images": 0,
+    "missed": 9,
+    "false alarm": 3
+   },
+   "13000": {
+    "images": 18,
+    "train_images": 198,
+    "missed": 10,
+    "false alarm": 2
+   },
+   "20085": {
+    "images": 34,
+    "train_images": 291,
+    "missed": 6,
+    "false alarm": 0
+   },
+   "44000": {
+    "images": 50,
+    "train_images": 50,
+    "missed": 22,
+    "false alarm": 18
+   },
+   "50600": {
+    "images": 29,
+    "train_images": 50,
+    "missed": 4,
+    "false alarm": 1
+   },
+   "77000": {
+    "images": 7,
+    "train_images": 100,
+    "missed": 0,
+    "false alarm": 0
+   },
+   "90100": {
+    "images": 74,
+    "train_images": 0,
+    "missed": 16,
+    "false alarm": 16
+   },
+   "92000": {
+    "images": 9,
+    "train_images": 111,
+    "missed": 0,
+    "false alarm": 0
+   }
+  },
+  "seen_boards": {
+   "images": 168,
+   "boards": [
+    "00041",
+    "13000",
+    "20085",
+    "44000",
+    "50600",
+    "77000",
+    "92000"
+   ],
+   "mAP": 0.9771962586215288,
+   "f1": 0.9714590594062043,
+   "precision": 0.9804842947821696,
+   "recall": 0.962598460895492
+  },
+  "unseen_boards": {
+   "images": 332,
+   "boards": [
+    "12000",
+    "12100",
+    "12300",
+    "90100"
+   ],
+   "mAP": 0.9867619417106716,
+   "f1": 0.9873527671067264,
+   "precision": 0.9895635481968404,
+   "recall": 0.9851518421963582
+  }
+ },
+ "yolov8n": {
+  "n_gt": 3140,
+  "n_kept": 3227,
+  "missed": {
+   "total": 148,
+   "by_cause": {
+    "low score": 84,
+    "not detected": 41,
+    "wrong class": 19,
+    "box off": 4
+   },
+   "by_class": {
+    "short": 55,
+    "spur": 28,
+    "mousebite": 25,
+    "open": 18,
+    "copper": 12,
+    "pin-hole": 10
+   }
+  },
+  "false alarm": {
+   "total": 235,
+   "by_cause": {
+    "no defect": 181,
+    "wrong class": 31,
+    "duplicate": 9,
+    "fragment": 8,
+    "box off": 6
+   },
+   "by_class": {
+    "pin-hole": 69,
+    "open": 66,
+    "short": 46,
+    "mousebite": 26,
+    "spur": 19,
+    "copper": 9
+   }
+  },
+  "confusions": {
+   "open -> mousebite": 4,
+   "spur -> short": 2,
+   "mousebite -> pin-hole": 2,
+   "pin-hole -> mousebite": 2,
+   "mousebite -> open": 2,
+   "spur -> pin-hole": 1,
+   "mousebite -> spur": 1,
+   "copper -> spur": 1,
+   "spur -> mousebite": 1,
+   "short -> copper": 1,
+   "short -> pin-hole": 1,
+   "short -> spur": 1
+  },
+  "by_board": {
+   "00041": {
+    "images": 21,
+    "train_images": 200,
+    "missed": 2,
+    "false alarm": 1
+   },
+   "12000": {
+    "images": 14,
+    "train_images": 0,
+    "missed": 5,
+    "false alarm": 66
+   },
+   "12100": {
+    "images": 146,
+    "train_images": 0,
+    "missed": 17,
+    "false alarm": 16
+   },
+   "12300": {
+    "images": 98,
+    "train_images": 0,
+    "missed": 7,
+    "false alarm": 27
+   },
+   "13000": {
+    "images": 18,
+    "train_images": 198,
+    "missed": 3,
+    "false alarm": 0
+   },
+   "20085": {
+    "images": 34,
+    "train_images": 291,
+    "missed": 9,
+    "false alarm": 4
+   },
+   "44000": {
+    "images": 50,
+    "train_images": 50,
+    "missed": 55,
+    "false alarm": 31
+   },
+   "50600": {
+    "images": 29,
+    "train_images": 50,
+    "missed": 2,
+    "false alarm": 53
+   },
+   "77000": {
+    "images": 7,
+    "train_images": 100,
+    "missed": 0,
+    "false alarm": 1
+   },
+   "90100": {
+    "images": 74,
+    "train_images": 0,
+    "missed": 48,
+    "false alarm": 36
+   },
+   "92000": {
+    "images": 9,
+    "train_images": 111,
+    "missed": 0,
+    "false alarm": 0
+   }
+  },
+  "seen_boards": {
+   "images": 168,
+   "boards": [
+    "00041",
+    "13000",
+    "20085",
+    "44000",
+    "50600",
+    "77000",
+    "92000"
+   ],
+   "mAP": 0.9613378957462567,
+   "f1": 0.9301796894201669,
+   "precision": 0.9283001418437139,
+   "recall": 0.9320668635522341
+  },
+  "unseen_boards": {
+   "images": 332,
+   "boards": [
+    "12000",
+    "12100",
+    "12300",
+    "90100"
+   ],
+   "mAP": 0.9718995347038059,
+   "f1": 0.9466223643351818,
+   "precision": 0.9320420892172184,
+   "recall": 0.9616660580265365
+  }
+ }
+}

@@ -1,0 +1,33 @@
+[project]
+name = "refdiff"
+version = "0.1.0"
+description = "Reference-based PCB defect detection on DeepPCB: sub-pixel registration, diff, candidate classifier, vs a template-blind YOLO baseline."
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "numpy<2",
+  "opencv-python-headless>=4.9",
+  "pyyaml>=6",
+]
+
+[project.optional-dependencies]
+train = ["torch==2.14.0", "torchvision==0.29.0", "matplotlib==3.11.2", "onnx>=1.16", "scikit-learn>=1.5"]
+# enough to run the committed classifier (CI gate, demo) without torch
+infer = ["onnxruntime==1.30.0"]
+# YOLOv8n baseline (make setup-yolo). ultralytics is AGPL-3.0 and installed with --no-deps so its
+# opencv-python requirement does not replace opencv-python-headless; these are its other deps.
+yolo = ["scipy>=1.11", "tqdm>=4.66", "psutil>=5.9", "requests>=2.31", "polars>=1.0", "ultralytics-thop>=2.0", "pillow>=10"]
+layout = ["gdstk>=0.9"]
+test = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["refdiff"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110

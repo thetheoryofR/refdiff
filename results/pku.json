@@ -1,0 +1,322 @@
+{
+ "n_images": 693,
+ "n_defects": 2953,
+ "base_scale": 0.48717948717948717,
+ "scenarios": {
+  "aligned": {
+   "mAP": 0.6396636533517616,
+   "f1": 0.6783219905918852,
+   "precision": 0.7569340496814695,
+   "recall": 0.6145023068588059,
+   "agnostic": {
+    "mAP": 0.8458620510224216,
+    "f1": 0.7925157465728049,
+    "precision": 0.8748466257668711,
+    "recall": 0.7243481205553675
+   },
+   "by_pku_class": {
+    "open_circuit": {
+     "recall_any_class": 0.8838174273858921,
+     "n": 482,
+     "ap_as_mapped_class": 0.8009803183888579
+    },
+    "short": {
+     "recall_any_class": 0.90020366598778,
+     "n": 491,
+     "ap_as_mapped_class": 0.8292043417489812
+    },
+    "mouse_bite": {
+     "recall_any_class": 0.8678861788617886,
+     "n": 492,
+     "ap_as_mapped_class": 0.7495826636777656
+    },
+    "spur": {
+     "recall_any_class": 0.4405737704918033,
+     "n": 488,
+     "ap_as_mapped_class": 0.5497657247350443
+    },
+    "spurious_copper": {
+     "recall_any_class": 0.584493041749503,
+     "n": 503,
+     "ap_as_mapped_class": 0.5854187740069912
+    },
+    "missing_hole": {
+     "recall_any_class": 0.6740442655935613,
+     "n": 497,
+     "ap_as_mapped_class": 0.32303009755292883
+    }
+   },
+   "mismatch_mean": 0.004575778277279665,
+   "flagged_for_review": 0
+  },
+  "aligned_noreg": {
+   "mAP": 0.6039494530893271,
+   "f1": 0.6398505767954747,
+   "precision": 0.667771321420108,
+   "recall": 0.6141709615970431,
+   "agnostic": {
+    "mAP": 0.728518563064867,
+    "f1": 0.7073614557485525,
+    "precision": 0.6914618369987063,
+    "recall": 0.724009481882831
+   },
+   "by_pku_class": {
+    "open_circuit": {
+     "recall_any_class": 0.8838174273858921,
+     "n": 482,
+     "ap_as_mapped_class": 0.6350689583271472
+    },
+    "short": {
+     "recall_any_class": 0.90020366598778,
+     "n": 491,
+     "ap_as_mapped_class": 0.8147830635323348
+    },
+    "mouse_bite": {
+     "recall_any_class": 0.8678861788617886,
+     "n": 492,
+     "ap_as_mapped_class": 0.745747946914969
+    },
+    "spur": {
+     "recall_any_class": 0.4405737704918033,
+     "n": 488,
+     "ap_as_mapped_class": 0.5299742754222335
+    },
+    "spurious_copper": {
+     "recall_any_class": 0.5825049701789264,
+     "n": 503,
+     "ap_as_mapped_class": 0.5806041136174551
+    },
+    "missing_hole": {
+     "recall_any_class": 0.6740442655935613,
+     "n": 497,
+     "ap_as_mapped_class": 0.3175183607218228
+    }
+   },
+   "mismatch_mean": 0.005700124640476076
+  },
+  "rotated": {
+   "mAP": 0.5119767245424082,
+   "f1": 0.5421895159359655,
+   "precision": 0.4810711116094917,
+   "recall": 0.6210978250904465,
+   "agnostic": {
+    "mAP": 0.6296013187891867,
+    "f1": 0.5783682232957595,
+    "precision": 0.4789953322960658,
+    "recall": 0.7297663393159499
+   },
+   "by_pku_class": {
+    "open_circuit": {
+     "recall_any_class": 0.8796680497925311,
+     "n": 482,
+     "ap_as_mapped_class": 0.7489006291858191
+    },
+    "short": {
+     "recall_any_class": 0.9042769857433809,
+     "n": 491,
+     "ap_as_mapped_class": 0.7905460055885863
+    },
+    "mouse_bite": {
+     "recall_any_class": 0.8699186991869918,
+     "n": 492,
+     "ap_as_mapped_class": 0.6373745160842602
+    },
+    "spur": {
+     "recall_any_class": 0.4262295081967213,
+     "n": 488,
+     "ap_as_mapped_class": 0.4290054101134899
+    },
+    "spurious_copper": {
+     "recall_any_class": 0.6043737574552683,
+     "n": 503,
+     "ap_as_mapped_class": 0.13583772741709926
+    },
+    "missing_hole": {
+     "recall_any_class": 0.6981891348088531,
+     "n": 497,
+     "ap_as_mapped_class": 0.3301960588651945
+    }
+   },
+   "mismatch_mean": 0.0328247739183586,
+   "flagged_for_review": 0
+  },
+  "rotated_noreg": {
+   "mAP": 0.008698681151532106,
+   "f1": 0.04594780997455486,
+   "precision": 0.03136673137469565,
+   "recall": 0.08586098092580537,
+   "agnostic": {
+    "mAP": 0.0022293388148402443,
+    "f1": 0.006545021816739389,
+    "precision": 0.00333767118207502,
+    "recall": 0.1676261429055198
+   },
+   "by_pku_class": {
+    "open_circuit": {
+     "recall_any_class": 0.12863070539419086,
+     "n": 482,
+     "ap_as_mapped_class": 0.003028820952532108
+    },
+    "short": {
+     "recall_any_class": 0.24643584521384929,
+     "n": 491,
+     "ap_as_mapped_class": 0.001594412239696599
+    },
+    "mouse_bite": {
+     "recall_any_class": 0.12601626016260162,
+     "n": 492,
+     "ap_as_mapped_class": 0.03646597866808167
+    },
+    "spur": {
+     "recall_any_class": 0.08811475409836066,
+     "n": 488,
+     "ap_as_mapped_class": 0.003710799755181124
+    },
+    "spurious_copper": {
+     "recall_any_class": 0.15109343936381708,
+     "n": 503,
+     "ap_as_mapped_class": 0.0020207118897388517
+    },
+    "missing_hole": {
+     "recall_any_class": 0.2635814889336016,
+     "n": 497,
+     "ap_as_mapped_class": 0.005371363403962275
+    }
+   },
+   "mismatch_mean": 0.35202597654691187
+  }
+ },
+ "scale_sweep": {
+  "0.7": {
+   "mAP": 0.44565857120352176,
+   "f1": 0.5297224919135095,
+   "agnostic": {
+    "mAP": 0.6041295999826474,
+    "f1": 0.6436642453591606,
+    "precision": 0.7963055416874688,
+    "recall": 0.5401286826955638
+   }
+  },
+  "1.4": {
+   "mAP": 0.6122993205800732,
+   "f1": 0.6485890732941659,
+   "agnostic": {
+    "mAP": 0.7434186096805893,
+    "f1": 0.7187713310580206,
+    "precision": 0.7244582043343654,
+    "recall": 0.7131730443616661
+   }
+  },
+  "1.0": {
+   "mAP": 0.6396636533517616,
+   "f1": 0.6783219905918852,
+   "agnostic": {
+    "mAP": 0.8458620510224216,
+    "f1": 0.7925157465728049,
+    "precision": 0.8748466257668711,
+    "recall": 0.7243481205553675
+   }
+  }
+ },
+ "registration": {
+  "protocol": {
+   "rot_deg": 10.0,
+   "shift_px": 40.0
+  },
+  "median_px": 0.011661992670049947,
+  "p95_px": 0.03467174894999018,
+  "max_px": 22.895062971397227,
+  "frac_over_2px": 0.004329004329004329,
+  "flagged_for_review": 0,
+  "max_px_confident": 22.895062971397227,
+  "ms_per_pair": 1052.3464614711063
+ },
+ "yolov8n_template_blind_aligned": {
+  "mAP": 0.07985776544589886,
+  "f1": 0.02146717662265661,
+  "precision": 0.011187776240779919,
+  "recall": 0.26439492663924996,
+  "agnostic": {
+   "mAP": 0.00809521727976992,
+   "f1": 0.01681720267563584,
+   "precision": 0.008649930508985236,
+   "recall": 0.30138841855739923
+  },
+  "by_pku_class": {
+   "open_circuit": {
+    "recall_any_class": 0.6887966804979253,
+    "n": 482,
+    "ap_as_mapped_class": 0.19892919541213944
+   },
+   "short": {
+    "recall_any_class": 0.49490835030549896,
+    "n": 491,
+    "ap_as_mapped_class": 0.26391898288242843
+   },
+   "mouse_bite": {
+    "recall_any_class": 0.23577235772357724,
+    "n": 492,
+    "ap_as_mapped_class": 0.0015838091713265216
+   },
+   "spur": {
+    "recall_any_class": 0.10040983606557377,
+    "n": 488,
+    "ap_as_mapped_class": 0.013546762773591643
+   },
+   "spurious_copper": {
+    "recall_any_class": 0.03777335984095427,
+    "n": 503,
+    "ap_as_mapped_class": 0.00023776818280248847
+   },
+   "missing_hole": {
+    "recall_any_class": 0.2635814889336016,
+    "n": 497,
+    "ap_as_mapped_class": 0.0009300742531047198
+   }
+  }
+ },
+ "yolov8n_ttd_aligned": {
+  "mAP": 0.5028239363678482,
+  "f1": 0.5373284332679671,
+  "precision": 0.5255034951417892,
+  "recall": 0.5496977942040061,
+  "agnostic": {
+   "mAP": 0.7088050859344661,
+   "f1": 0.6771037181996086,
+   "precision": 0.6094850948509485,
+   "recall": 0.7615983745343718
+  },
+  "by_pku_class": {
+   "open_circuit": {
+    "recall_any_class": 0.9896265560165975,
+    "n": 482,
+    "ap_as_mapped_class": 0.7952481405521411
+   },
+   "short": {
+    "recall_any_class": 0.6802443991853361,
+    "n": 491,
+    "ap_as_mapped_class": 0.4875025822333895
+   },
+   "mouse_bite": {
+    "recall_any_class": 0.943089430894309,
+    "n": 492,
+    "ap_as_mapped_class": 0.5681311457068264
+   },
+   "spur": {
+    "recall_any_class": 0.7008196721311475,
+    "n": 488,
+    "ap_as_mapped_class": 0.4709950333261686
+   },
+   "spurious_copper": {
+    "recall_any_class": 0.5526838966202783,
+    "n": 503,
+    "ap_as_mapped_class": 0.4331208626014713
+   },
+   "missing_hole": {
+    "recall_any_class": 0.7122736418511066,
+    "n": 497,
+    "ap_as_mapped_class": 0.2619458537870919
+   }
+  }
+ }
+}

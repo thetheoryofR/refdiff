@@ -1,0 +1,48 @@
+name: ci
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    # Lint + unit tests on fixtures built in code (registration on a synthetic board, the diff rules,
+    # the DeepPCB scoring rule, layout rasterization). No dataset, no GPU.
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.12.9"
+      - run: uv venv .venv --python 3.11
+      - run: uv pip install --python .venv/bin/python -e '.[test,layout,infer]'
+      - run: .venv/bin/python -m ruff check refdiff scripts tests
+      - run: .venv/bin/python -m pytest -q
+
+  gate:
+    # The quality gate on real data: clone DeepPCB, then guarded registration on 100 synthetic warps and
+    # the full detector (committed ONNX classifier, CPU) on the 500-image test split. Fails the build if
+    # registration error or mAP / F1 cross the limits in eval/gate.json.
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      REFDIFF_DATA: ${{ github.workspace }}/_data/DeepPCB/PCBData
+      REFDIFF_OUT: ${{ github.workspace }}/_out
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.12.9"
+      - name: cache DeepPCB
+        uses: actions/cache@v4
+        with:
+          path: _data/DeepPCB
+          key: deeppcb-v1
+      - name: fetch DeepPCB
+        run: '[ -d _data/DeepPCB/PCBData ] || git clone --depth 1 https://github.com/tangsanli5201/DeepPCB.git _data/DeepPCB'
+      - run: uv venv .venv --python 3.11
+      - run: uv pip install --python .venv/bin/python -e '.[infer]'
+      - run: .venv/bin/python scripts/gate.py --workers 4

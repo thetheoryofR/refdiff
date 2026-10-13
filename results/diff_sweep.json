@@ -1,0 +1,80 @@
+{
+ "defaults": {
+  "tol": 0,
+  "min_area": 12
+ },
+ "grid": [
+  {
+   "tol": 0,
+   "min_area": 6,
+   "candidate_recall": 0.9917197452229299,
+   "candidates_per_image": 12.284,
+   "mAP": 0.9850480734969406,
+   "f1": 0.9806002483200233
+  },
+  {
+   "tol": 0,
+   "min_area": 12,
+   "candidate_recall": 0.9888535031847133,
+   "candidates_per_image": 11.252,
+   "mAP": 0.9829564178850984,
+   "f1": 0.9819158166040698
+  },
+  {
+   "tol": 0,
+   "min_area": 24,
+   "candidate_recall": 0.9732484076433121,
+   "candidates_per_image": 9.622,
+   "mAP": 0.969395021199238,
+   "f1": 0.9773459469608364
+  },
+  {
+   "tol": 1,
+   "min_area": 6,
+   "candidate_recall": 0.9334394904458598,
+   "candidates_per_image": 7.412,
+   "mAP": 0.9233272354864345,
+   "f1": 0.9483858300168335
+  },
+  {
+   "tol": 1,
+   "min_area": 12,
+   "candidate_recall": 0.9070063694267516,
+   "candidates_per_image": 7.026,
+   "mAP": 0.8992685043810408,
+   "f1": 0.9365796616322434
+  },
+  {
+   "tol": 1,
+   "min_area": 24,
+   "candidate_recall": 0.8337579617834395,
+   "candidates_per_image": 6.14,
+   "mAP": 0.8356346985193808,
+   "f1": 0.9021785573394475
+  },
+  {
+   "tol": 2,
+   "min_area": 6,
+   "candidate_recall": 0.689171974522293,
+   "candidates_per_image": 4.856,
+   "mAP": 0.6709031641116865,
+   "f1": 0.7668966743343888
+  },
+  {
+   "tol": 2,
+   "min_area": 12,
+   "candidate_recall": 0.6560509554140127,
+   "candidates_per_image": 4.556,
+   "mAP": 0.6472933511010138,
+   "f1": 0.7541701731761566
+  },
+  {
+   "tol": 2,
+   "min_area": 24,
+   "candidate_recall": 0.575796178343949,
+   "candidates_per_image": 3.898,
+   "mAP": 0.5824068024870785,
+   "f1": 0.7114798542617561
+  }
+ ]
+}

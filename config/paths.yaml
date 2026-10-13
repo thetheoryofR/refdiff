@@ -1,0 +1,6 @@
+# Where DeepPCB lives (git clone https://github.com/tangsanli5201/DeepPCB). Override with REFDIFF_DATA.
+deeppcb: data/deeppcb/src/PCBData
+# Big outputs (crops, YOLO runs, weights). Override with REFDIFF_OUT.
+out_root: data/deeppcb/out
+# PKU synthetic PCB defects, Kaggle mirror akhatova/pcb-defects (PCB_DATASET/). Override with REFDIFF_PKU.
+pku: data/pku-pcb/raw/PCB_DATASET
